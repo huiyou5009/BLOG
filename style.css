@@ -67,6 +67,14 @@ body {
   letter-spacing: 3px;
   color: #fffbf5;
 }
+.b_s:hover {
+  background-color: #58287F;
+}
+.b_s:active {
+  color: #58287F;
+  background-color: #DFCCFB;
+  border: 3px solid;
+}
 
 #list {
   margin-top: 30px;
@@ -76,18 +84,17 @@ body {
 }
 
 .article {
-  border: 1px solid none;
   border-radius: 20px;
-  width: 400px;
+  width: 395px;
   margin: 20px;
-  padding: 12px;
+  padding: 10px 20px 10px 20px;
   background-color: #F5E8B7;
   word-wrap: break-word;
 }
 
 .article h2 {
   font-size: 28px;
-  color: #3D0C11;
+  color: #102C57;
   margin-top: 10px;
   margin-bottom: -10px;
 }

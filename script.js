@@ -14,18 +14,19 @@ const click_in_ct=function(){
 	ct.placeholder = "";
 };
 
-tt.addEventListener("click", click_in_tt)
-ct.addEventListener("click", click_in_ct)
+tt.addEventListener("click", click_in_tt);
+ct.addEventListener("click", click_in_ct);
 
 
-const tt_error = function(){
+// 輸入框為空時
+const tt_null = function(){
 	tt.style.border = "2px solid red";
-	tt.placeholder = "Please enter the \"Title\""
+	tt.placeholder = "Please enter the Title";
 };
 
-const ct_error = function(){
+const ct_null = function(){
 	ct.style.border = "2px solid red";
-	ct.placeholder = "Please enter the \"Content\""
+	ct.placeholder = "Please enter the Content";
 }
 
 const click_submit = function(){
@@ -39,12 +40,12 @@ const click_submit = function(){
 			tt.value = "";
 			ct.value = "";
 	} else if (tt.value=="" && ct.value!==""){
-			tt_error();			
+			tt_null();			
 	}	else if (tt.value!=="" && ct.value==""){
-			ct_error();
+			ct_null();
 	}	else {
-			tt_error();
-			ct_error();
+			tt_null();
+			ct_null();
 	}
 };
 
